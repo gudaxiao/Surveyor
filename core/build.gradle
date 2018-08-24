@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 25
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'com.android.support:appcompat-v7:25.3.1'
+    api 'com.android.support.constraint:constraint-layout:1.1.0'
+    api 'com.android.support:design:25.3.1'
+    testCompile'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    //ButterKnife依赖
+    api 'com.jakewharton:butterknife:8.4.0'
+    //动态权限处理
+    api 'com.github.hotchemi:permissionsdispatcher:2.4.0'
+    //Fragment依赖
+    api 'me.yokeyword:fragmentation:1.0.3'
+    api 'me.yokeyword:fragmentation-swipeback:1.0.3'
+    //悬浮按钮
+    api 'com.getbase:floatingactionbutton:1.10.1'
+    //工具包
+    api 'com.blankj:utilcode:1.7.1'
+    //多dex
+    api 'com.android.support:multidex:1.0.1'
+    //RecyclerView依赖
+//    api 'com.android.support:recyclerview-v7:25.3.1'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:+'
+    //RecyclerView 分割线
+    api 'com.choices.divider:RecyclerView_Divider:1.0.0'
+    //字体图标
+    api 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+    api 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    //数据库依赖
+    api 'org.greenrobot:greendao:3.2.2'
+// https://mvnrepository.com/artifact/org.jsoup/jsoup
+    api 'org.jsoup:jsoup:1.11.3'
+
+    //lombok
+//    api  'org.projectlombok:lombok:1.16.6'
+}

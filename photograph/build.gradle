@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api  'org.projectlombok:lombok:1.16.6'
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = "UTF-8"
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

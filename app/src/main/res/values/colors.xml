@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@android:color/holo_green_light</color>
+    <color name="colorAccentDark">@android:color/holo_green_dark</color>
+    <color name="app_main">@color/colorAccent</color>
+    <color name="app_main_dark">@color/colorAccentDark</color>
+    <color name="half_black">#808080</color>
+</resources>

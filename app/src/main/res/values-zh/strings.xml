@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">测量师</string>
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+    <string name="action_add_road">新建路线</string>
+    <string name="action_delete_current_road">删除当前路线</string>
+    <string name="method_jd">交点法</string>
+    <string name="method_lines">线元法</string>
+    <string name="road_name">线路名称</string>
+    <string name="road_name_prefix">桩号前缀，默认为K</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="action_import_data_by_text">导入数据(文本文件)</string>
+    <string name="action_import_data_by_excel">导入数据(Excel)</string>
+    <string name="action_setting_param">设置参数</string>
+    <string name="photo_scale">相片比例尺</string>
+    <string name="photo_y0">内方位元素y0</string>
+    <string name="photo_f">内方位元素 焦距</string>
+    <string name="text_save">保存</string>
+    <string name="btn_calculate">计算</string>
+
+</resources>
